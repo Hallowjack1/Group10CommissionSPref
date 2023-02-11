@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Commision Calculator"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="327dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Agent Name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etRealEstate"
+        android:layout_width="327dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Real Estate principal amount per unit"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etRealEstateSold"
+        android:layout_width="327dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Real Estate sold"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRealEstate" />
+
+    <EditText
+        android:id="@+id/etAgentCommission"
+        android:layout_width="327dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Agent's Commission in percentage"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRealEstateSold" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="126dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="52dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="VAT = 10%"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAgentCommission" />
+</androidx.constraintlayout.widget.ConstraintLayout>
