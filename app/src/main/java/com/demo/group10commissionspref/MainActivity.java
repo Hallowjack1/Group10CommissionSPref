@@ -16,10 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnCalculate;
 
     public static final String mypreference = "commissionpref";
-    public static final String Name = "NameKey";
-    public static final String RealEstate = "RealEstateKey";
-    public static final String RealEstateSold = "RealEstateSoldKey";
-    public static final String Commission = "CommissionKey";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
